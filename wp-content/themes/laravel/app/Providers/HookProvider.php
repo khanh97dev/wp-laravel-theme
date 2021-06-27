@@ -19,7 +19,7 @@ class HookProvider extends ServiceProvider
 
     public function wp_head()
     {
-        ?> <meta name="token" content="<?= $_COOKIE['token'] ?>"> <?php
+        ?> <meta name="token" content="<?= $_COOKIE['token'] ?? '' ?>"> <?php
     }
 
     public function admin_init()
